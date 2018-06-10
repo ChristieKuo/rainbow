@@ -1,0 +1,285 @@
+@charset "UTF-8";
+@import url("rwd.css");
+/* CSS Document */
+
+/*完全滿版的狀態，不要有白邊*/
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family:Helvetica, Arial," sans-serif", Microsoft JhengHei;
+}
+
+
+header{
+	width: 100%;
+	overflow: hidden;
+	height: 5%;
+	
+}
+
+/*～～～～～～～～～～～～～～～～nav barrrrrrrrr～～～～～～～～～～～～～～～*/
+
+nav{
+	top:0px;
+	position: fixed; 
+	z-index: 9999999; 
+	border-bottom: solid 3px #000;
+	padding-bottom: 2px;
+	}
+
+nav ul{
+	margin-left: 50px; 
+	margin-right: 55px; 
+	padding: 0;
+
+	}
+
+nav li{
+	display: inline;
+	padding-right: 30px;
+	}
+
+nav li a{
+	padding:5px;
+	font-size: 10pt;
+	color:#000; 
+	border:solid 1px #000;
+	background-color: #fff2ff;
+	text-decoration: none; /*把底線去除*/
+}
+
+nav li a:hover{
+	border:solid 2px #000;
+	background-color: #fff2ff;
+	}
+
+
+/*~~~~~~~~~~~~~~~~~~article01~~~~~~~~~~~~~~~~~~*/
+
+#article01{
+	position:relative;
+	overflow:auto;
+	margin-top:7%;
+	margin-bottom:5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-image: url(../image/lgbtq.jpg);
+	background-size:80%;
+	background-repeat: no-repeat;
+}
+
+
+.anitext{
+	display: block;
+	width: 30%;
+	float: right;
+	margin-top: 22%;
+	right: 1%;
+	position:relative;
+	opacity:1;
+	font-size: 0.8em;
+	
+	-webkit-animation-name: ant; /* Safari 4.0 - 8.0 */
+	animation-name: ant;
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease; /* Safari 4.0 - 8.0 */
+	animation-timing-function: ease;
+	
+	z-index:9999999;
+}
+
+
+@keyframes ant {
+    from   {right:0%; opacity:0; background:rgba(0,0,0,0);}
+    to  {right:1%; opacity:1; background:rgba(0,0,0,0);}
+}
+
+.anitext3{
+	text-decoration:underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #000;
+	position:fixed;
+	padding:10px;
+	right:4%;
+	bottom:70%;
+	color:#000;
+	background:rgba(0,0,0,0);
+	font-size:0.8em;
+	font-weight:bold;
+	opacity:0.8;
+	-webkit-writing-mode: vertical-lr;
+	writing-mode: vertical-lr ;
+	
+	-webkit-animation-name: ant3; /* Safari 4.0 - 8.0 */
+	animation-name: ant3;
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease; /* Safari 4.0 - 8.0 */
+	animation-timing-function: ease;
+	
+}
+@keyframes ant3 {
+    from   {bottom:100%; opacity:0; background:rgba(0,0,0,0);}
+    to  {bottom:70%; opacity:0.8; background:rgba(0,0,0,0);}
+}
+
+
+/*~~~~~~~~~~~~~~~~~~article02~~~~~~~~~~~~~~~~~~*/
+#article02{
+	border-top: solid 1px #000;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 90%;
+	margin: auto;
+	padding:5% 5%;
+}
+
+#article02  h1{
+	text-align: center;
+	color: #000;
+	font-style: oblique;
+	
+	
+}
+
+#article02  h6{
+	border:3px #000 solid;
+	text-align: center;
+	color: #000;
+	margin:0 2%;
+	font-size: 0.8em;
+	padding: 20px;
+}
+
+.box{
+	display: inline-block;/*把圖、文字全部包在一起當作群組操作*/
+	box-sizing: border-box;
+	float: left;
+	background:#fff2ff;
+	margin:5%;
+	padding: 5%;
+	overflow: hidden;
+	border:solid 1px #000;
+}
+
+.imgbox{
+	width: 100%;
+	overflow: hidden;
+}
+
+.box img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+.box:hover{
+	cursor: pointer;
+}
+
+.box .imgbox img{
+	-ms-transform:scale(1,1);/*IE 9*/
+	-webkit-transform:scale(1,1);/*safari*/
+	transform: scale(1,1);/*Standard syntax*/
+	
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+	
+	transition-timing-function:ease-out;/*動態效果，可以選別ㄉ*/
+	-webkit-transition-timing-function: ease-out;
+}
+
+.box:hover .imgbox img{
+	-ms-transform: scale(1.2,1.2);
+	-webkit-transform:scale(1.2,1.2);
+	transform:scale(1.2,1.2);
+}
+
+.box p{
+	box-sizing: border-box;
+	padding: 0px 20px;
+	color: #000;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~article03~~~~~~~~~~~~~~~~~~*/
+#article03{
+	border-top: solid 1px #000;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 90%;
+	margin: auto;
+	padding:5% 5%;
+}
+
+#article03  h1{
+	text-align: center;
+	color: #000;
+	font-style: oblique;
+}
+
+#article03  p{
+	margin-top:20px;
+	color: #000;
+	font-size: 0.8em;
+}
+
+#article03 a{
+	display: block;
+	padding: 15px 15px;
+	color: #000;
+	text-decoration: none;
+	font-size:0.8em;
+	border:solid 1px #000;
+	background:#fff2ff;
+	margin-top:20px;
+	margin-right: 20%;
+}
+
+/*～～～～～～～～～～～～～～～～～footer～～～～～～～～～～～～～～～*/
+
+footer{
+	border-top: solid 3px #000;
+	width: 100%;	
+	background-image: url(../image/lgbtq.jpg);
+}
+
+.credit{
+	padding:1%;
+	text-align: center;
+	margin-right: 50px;
+	font-size: 0.5em;
+	text-decoration: none;
+	color: #000;
+	
+}
+
+/*===================rwd details===========================*/
+
+
+/*For tablets*/
+@media only screen and (max-width:768px){
+
+	#article01{
+	margin-top:20%;
+	background-image:url(../image/cover4phone.png);
+	background-size:100%;
+	background-repeat: no-repeat;
+	}
+	
+	.anitext{
+		right: 0%;
+	margin-top:20%;
+	width: 90%;
+	float: left;
+	}
+	
+}
